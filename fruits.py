@@ -89,3 +89,14 @@ cc=count/bb
 cc=round(cc, 1)
 print(cc)
 
+fruits = {
+    "apple": 5,
+    "banana": 2,
+    "orange": 0,
+    "grape": 7
+}
+
+for a,b in fruits.items():
+    if b>0:
+        print(a,":",b)
+
