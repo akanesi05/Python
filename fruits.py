@@ -100,3 +100,10 @@ for a,b in fruits.items():
     if b>0:
         print(a,":",b)
 
+input_line = input()
+
+tltal=0
+for i in input_line:
+    if "y"==i:
+       tltal+=1
+print(tltal)
