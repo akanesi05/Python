@@ -33,8 +33,13 @@ items_imges = {
 items_orders = ["剣", "盾", "回復薬", "クリスタル"]
 
 # ここから下を記述しよう
+
 for item_name in items_orders:
     print( img src='URL'><br>items_imges[item_name])
     print(item_name)
 class MenuItem:
     pass
+
+import sys
+for line in sys.stdin.readlines():
+    print(line.rstrip())
