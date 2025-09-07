@@ -43,3 +43,26 @@ class MenuItem:
 import sys
 for line in sys.stdin.readlines():
     print(line.rstrip())
+
+input_line = input().split()
+del input_line[0]
+#print(input_line)
+
+
+for n in input_line:
+     print(n)
+     
+
+# 1行目をスペースで分割してリスト化
+data = input().split()
+
+# 最初の要素が N（件数）
+n = int(data[0])
+print(n)
+# 2番目以降が文字列データ
+strings = data[1:]
+print(strings)
+# 改行区切りで出力
+for s in strings:
+    print(s)
+
