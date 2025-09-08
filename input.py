@@ -66,3 +66,10 @@ print(strings)
 for s in strings:
     print(s)
 
+input_line = input()
+#print("XXXXXX")
+
+for num in range(int(input_line)):
+s=input().split()
+del s[0]
+print(*s)
