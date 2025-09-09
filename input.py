@@ -73,3 +73,11 @@ for num in range(int(input_line)):
 s=input().split()
 del s[0]
 print(*s)
+
+if len(input_line)==3:
+    print(input_line)
+elif len(input_line)==2:
+    print('0'+str(input_line))
+elif len(input_line)==1:
+    print('00'+str(input_line))
+    
