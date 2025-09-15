@@ -81,3 +81,7 @@ elif len(input_line)==2:
 elif len(input_line)==1:
     print('00'+str(input_line))
     
+
+s = input()           # 例: 5 1
+parts = s.split(' ')  # ['5', '1'] に分割
+print(','.join(parts))  # → 5,1
