@@ -85,3 +85,13 @@ elif len(input_line)==1:
 s = input()           # 例: 5 1
 parts = s.split(' ')  # ['5', '1'] に分割
 print(','.join(parts))  # → 5,1
+
+a, b, c = map(int, input().split())
+arr = list(map(int, input().split()))
+
+total = 0
+for num in arr[b-1:c]:   # b〜c番目の要素を取り出す
+    total += num
+
+print(total)
+
