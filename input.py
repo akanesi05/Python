@@ -95,3 +95,28 @@ for num in arr[b-1:c]:   # b〜c番目の要素を取り出す
 
 print(total)
 
+N = int(input())
+lower = 1
+upper = 10**9
+divisors = []
+
+for _ in range(N):
+    op, x = input().split()
+    x = int(x)
+    if op == ">":
+        lower = max(lower, x+1)
+    elif op == "<":
+        upper = min(upper, x-1)
+    elif op == "/":
+        divisors.append(x)
+
+for num in range(lower, upper+1):
+    ok = True
+    for d in divisors:
+        if num % d != 0:
+            ok = False
+            break
+    if ok:
+        print(num)
+        break   # 最小の a を見つけたら終了
+
